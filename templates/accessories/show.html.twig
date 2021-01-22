@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accessories{% endblock %}
+
+{% block body %}
+    <h1>Accessories</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ accessory.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ accessory.titre }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>{{ accessory.image }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ accessory.description }}</td>
+            </tr>
+            <tr>
+                <th>Icone</th>
+                <td>{{ accessory.icone }}</td>
+            </tr>
+            <tr>
+                <th>Categorie</th>
+                <td>{{ accessory.categorie }}</td>
+            </tr>
+            <tr>
+                <th>Souscategorie</th>
+                <td>{{ accessory.souscategorie }}</td>
+            </tr>
+            <tr>
+                <th>Soustitre</th>
+                <td>{{ accessory.soustitre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('accessories_index') }}">back to list</a>
+
+    <a href="{{ path('accessories_edit', {'id': accessory.id}) }}">edit</a>
+
+    {{ include('accessories/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Belts{% endblock %}
+
+{% block body %}
+    <h1>Belts</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ belt.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ belt.titre }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>{{ belt.image }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ belt.description }}</td>
+            </tr>
+            <tr>
+                <th>Icone</th>
+                <td>{{ belt.icone }}</td>
+            </tr>
+            <tr>
+                <th>Categorie</th>
+                <td>{{ belt.categorie }}</td>
+            </tr>
+            <tr>
+                <th>Souscategorie</th>
+                <td>{{ belt.souscategorie }}</td>
+            </tr>
+            <tr>
+                <th>Soustitre</th>
+                <td>{{ belt.soustitre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('belts_index') }}">back to list</a>
+
+    <a href="{{ path('belts_edit', {'id': belt.id}) }}">edit</a>
+
+    {{ include('belts/_delete_form.html.twig') }}
+{% endblock %}

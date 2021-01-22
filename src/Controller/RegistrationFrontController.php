@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 
-class RegistrationController extends AbstractController
+class RegistrationFrontController extends AbstractController
 {
     /**
      * @Route("/register", name="app_register")

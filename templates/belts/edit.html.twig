@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Belts{% endblock %}
+
+{% block body %}
+    <h1>Edit Belts</h1>
+
+    {{ include('belts/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('belts_index') }}">back to list</a>
+
+    {{ include('belts/_delete_form.html.twig') }}
+{% endblock %}

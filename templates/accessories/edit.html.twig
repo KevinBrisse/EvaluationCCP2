@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Accessories{% endblock %}
+
+{% block body %}
+    <h1>Edit Accessories</h1>
+
+    {{ include('accessories/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('accessories_index') }}">back to list</a>
+
+    {{ include('accessories/_delete_form.html.twig') }}
+{% endblock %}
