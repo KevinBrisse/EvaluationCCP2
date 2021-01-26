@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/contact")
+ * @Route("/contact_index")
  */
 class ContactController extends AbstractController
 {
