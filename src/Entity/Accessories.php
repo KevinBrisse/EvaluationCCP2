@@ -140,4 +140,6 @@ class Accessories
 
         return $this;
     }
+
+    
 }
